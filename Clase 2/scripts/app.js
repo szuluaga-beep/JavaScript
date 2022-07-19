@@ -1,9 +1,9 @@
-alert("Hola mundo")
+//alert("Hola mundo")
 let firstName="Steven";
 let lastName="Zuluaga Cortes";
 let gender="female";
-// let age=26;
-var age =5;
+let age=26;
+
 
 if (gender=="male") {
     

@@ -1,5 +1,11 @@
-console.log(age);
+{
+  let age = 5; //number
+  let firstName = "Steven";//string
+  let lastName = "Zuluaga Cortes";
+  let isStudent = false;
+  let gender = "male";
+  let city;
+  let country = null;
 
-console.log(nombre)
-
-let nombre="Carlos"
+  console.log(typeof country);
+}
