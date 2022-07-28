@@ -6,8 +6,16 @@ const entrarAlBar = (edad, pago) => {
     console.log("No puede entrar al bar");
   }
 };
+const validarPago=(caracter)=>{
+    if(caracter===true||caracter==="verdadero"){
+        return true
+    }else{
+        return false
+    }
+}
 let edadPersona = Number(prompt("Ingrese su edad"));
-let pagoEntrada = Boolean(prompt("¿¿Usted pago??"));
+let pagoEntrada = validarPago(prompt("¿¿Usted pago??"));
+
 entrarAlBar(edadPersona, pagoEntrada);
 
 console.log(true && true);
