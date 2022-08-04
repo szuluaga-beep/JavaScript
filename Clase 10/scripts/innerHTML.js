@@ -12,5 +12,5 @@ let skillsConcat = "";
 for (let i = 0; i < skills.length; i++) {
   skillsConcat = skillsConcat + `<li>${skills[i].toUpperCase()}</li>`;
 }
-
+console.log(skills)
 ul.innerHTML=skillsConcat
