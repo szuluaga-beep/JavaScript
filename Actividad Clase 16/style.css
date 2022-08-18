@@ -1,0 +1,29 @@
+.form {
+    width: 400px;
+    height: 500px;
+    background-color: darkorange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    border-radius: 1rem;
+    margin: 50px auto;
+}
+h1 {
+    color: chartreuse;
+}
+input,
+button{
+    width: 260px;
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+    border-radius: 4px;
+    border-style: none;
+}
+
+.usuario{
+    color: black;
+    font-size: 1.5rem;
+    background-color: blue;
+}
