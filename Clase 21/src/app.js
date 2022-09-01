@@ -1,23 +1,28 @@
-class Persona {
-  constructor(nombre, edad, genero, pais, cedula) {
+class Personas {
+
+  constructor(nombre, ciudad, edad, genero) {
     this.nombre = nombre;
+    this.ciudad = ciudad;
     this.edad = edad;
     this.genero = genero;
-    this.pais = pais;
-    this.cedula = cedula;
   }
-  mostraPais() {
-    console.log(this.pais);
+  caminar(){
+    return (`${this.nombre} esta caminando`)
   }
-  get getGenero() {
-    return this.genero;
+
+  get obtenerEdad(){
+    return this.edad
+  }
+  get obtenerGenero(){
+    return this.genero
+  }
+
+  set establecerNombre(nombre){
+    this.nombre=nombre
   }
 }
+const persona1 = new Personas("Steven Zuluaga", "Medellin", 26, "Masculino");
 
-const persona2 = new Persona("Steven", 26, "No se sabe", "Colombia", 123);
-const persona3 = new Persona("Yinier", 15, "Masculino", "Alemania", 666);
-
-console.log(persona2.mostraPais());
-console.log(persona3.getGenero);
-
-
+const persona2 = new Personas("Yinier", "Medellin", 19, "Macho");
+persona2.establecerNombre="Yeison"
+console.log(persona2)
